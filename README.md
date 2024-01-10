@@ -33,7 +33,8 @@
     <h1>🎉 Farewell, Charlie! 🎉</h1>
     <p>Wishing you all the best in your new role. We'll miss you!</p>
 
-    <img src="[https://example.com/celebration-image.png](https://media.giphy.com/media/3ohuPBenpDq310Xynu/giphy.gif)" alt="Celebration Image" class="celebration-img">
+<img src="https://media.giphy.com/media/3ohuPBenpDq310Xynu/giphy.gif" alt="Celebration Image" class="celebration-img">
+<img src="https://media.giphy.com/media/3o7bubaeGyuCOb3HqM/giphy.gif" alt="Celebration Image" class="celebration-img">
 
     <!-- Add celebration graphics or emojis -->
     <img src="path/to/celebration-image.png" alt="Celebration Image" class="celebration-img">
