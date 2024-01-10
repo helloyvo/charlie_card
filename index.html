@@ -41,24 +41,36 @@
             border-radius: 10px;
             background-color: #fffafa; /* Light pink background color */
         }
+
+        /* Define the animation */
+        @keyframes rotateAnimation {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        /* Apply animation to an element with the 'rotate' class */
+        .rotate {
+            animation: rotateAnimation 1s infinite linear;
+        }
     </style>
 </head>
 <body>
     <h1>🎉 Farewell, Charlie! 🎉</h1>
     <p>Wishing you all the best in your new role. We'll miss you!</p>
 
-    
+    <!-- Add an interactive button -->
+    <button onclick="addRotation()">Click me for Fun!</button>
+
     <img src="https://media.giphy.com/media/lngL9wiDDGNlBVM0z0/giphy.gif" alt="Celebration Image" class="celebration-img">
 
     <img src="https://media.giphy.com/media/iJC6vqnoxXvPO/giphy.gif" alt="Celebration Image" class="celebration-img">
 
     <img src="https://media.giphy.com/media/LRTcrr2Bda18Ztorcy/giphy.gif" alt="Celebration Image" class="celebration-img">
 
-
     <!-- Coworker notes section -->
     <div class="coworker-note">
         <h2 style="color: #8a2be2;">Yvonne</h2> <!-- Dark Violet heading color -->
-        <p>Charlie! My oldest work friend! We've seen some stuff, huh? Your talent for turning challenges into adventures have made my workdays (almost) enjoyable. Could not have asked for a better person to work with. We'll miss not seeing your face on calls, ha. Crush Campus! </p>
+        <p id="yvonneNote">Charlie! My oldest work friend! We've seen some stuff, huh? Your talent for turning challenges into adventures have made my workdays (almost) enjoyable. Could not have asked for a better person to work with. We'll miss not seeing your face on calls, ha. Crush Campus! </p>
     </div>
     
     <div class="coworker-note">
@@ -83,6 +95,13 @@
 
     <img src="https://media.giphy.com/media/3ohuPBenpDq310Xynu/giphy.gif" alt="Celebration Image" class="celebration-img">
     <p>From, your RILO pals </p>
-    
+
+    <script>
+        // JavaScript function to add 'rotate' class to Yvonne's note
+        function addRotation() {
+            var yvonneNote = document.getElementById('yvonneNote');
+            yvonneNote.classList.add('rotate');
+        }
+    </script>
 </body>
 </html>
