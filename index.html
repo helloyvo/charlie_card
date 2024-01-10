@@ -10,19 +10,18 @@
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             text-align: center;
             padding: 20px;
-            background: linear-gradient(to right, #ff99cc, #cc99ff); /* Gradient background */
-            color: #fff; /* White text color */
+            background-color: #fde6e6; /* Light pink background color */
+            color: #333; /* Dark text color */
         }
 
         h1 {
-            color: #ff3366; /* Pink heading color */
-            margin-bottom: 20px;
+            color: #cc0000; /* Dark red heading color */
         }
 
         p {
+            color: #666; /* Slightly darker text color */
             font-size: 18px;
             margin-top: 10px;
-            color: #fff; /* White text color */
         }
 
         .celebration-img {
@@ -43,7 +42,7 @@
             flex: 1 0 calc(33.33% - 20px);
             text-align: left;
             padding: 15px;
-            border: 2px solid #bfbfbf; /* Light gray border */
+            border: 2px solid #ffcc00; /* Yellow border */
             border-radius: 10px;
             background-color: #fff; /* White background color */
             transition: transform 0.3s ease-in-out; /* Added a subtle hover transition */
@@ -57,18 +56,13 @@
         /* Button styling */
         button {
             cursor: pointer;
-            background: linear-gradient(to right, #ff3366, #ffcc66); /* Gradient background */
+            background-color: #cc0000; /* Dark red background color */
             color: #fff; /* White text color */
-            padding: 15px 30px;
+            padding: 10px 20px;
             border: none;
             border-radius: 5px;
-            font-size: 20px;
-            margin-top: 30px;
-            transition: background 0.3s ease-in-out;
-        }
-
-        button:hover {
-            background: linear-gradient(to right, #ff3366, #ff6666); /* Gradient background on hover */
+            font-size: 16px;
+            margin-top: 20px;
         }
 
         /* Fun animation */
@@ -104,22 +98,22 @@
         <!-- Coworker notes section -->
         <div class="coworker-notes">
             <div class="coworker-note">
-                <h2 style="color: #ff3399;">Yvonne</h2> <!-- Pink heading color -->
+                <h2 style="color: #cc0066;">Yvonne</h2> <!-- Darker pink color -->
                 <p>Charlie! My oldest work friend! Your talent for turning challenges into adventures has made my workdays so much more tolerable. Couldn't have asked for a better person to work with. We'll miss not seeing your face on calls, ha!</p>
             </div>
 
             <div class="coworker-note">
-                <h2 style="color: #3399ff;">Brian</h2> <!-- Blue heading color -->
+                <h2 style="color: #3366cc;">Brian</h2> <!-- Darker blue color -->
                 <p>Write your farewell note here...</p>
             </div>
 
             <div class="coworker-note">
-                <h2 style="color: #33cc33;">Stephan</h2> <!-- Green heading color -->
+                <h2 style="color: #339933;">Stephan</h2> <!-- Darker green color -->
                 <p>Charlie thank you so much for making the time and for taking all my questions during onboarding training. While it was short-lived, it was nice being on the same team for a few months. Really appreciate all your help. Good luck, and I hope you have a smooth transition to your new work.</p>
             </div>
             
             <div class="coworker-note">
-                <h2 style="color: #33cc33;">Briana</h2> <!-- Green heading color -->
+                <h2 style="color: #339933;">Briana</h2> <!-- Darker green color -->
                 <p>Write your farewell note here...</p>
             </div>            
 
@@ -139,7 +133,7 @@
 
     <img src="https://media.giphy.com/media/3ohuPBenpDq310Xynu/giphy.gif" alt="Celebration Image" class="celebration-img">
     
-    <button onclick="revealSection()">Click here for the surprise!</button>
+    <button onclick="revealSection()">Click here</button>
 
     <script>
         // JavaScript function to reveal the hidden section
