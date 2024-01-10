@@ -90,7 +90,7 @@
     <img src="https://media.giphy.com/media/LRTcrr2Bda18Ztorcy/giphy.gif" alt="Celebration Image" class="celebration-img">
 
     <!-- Add an interactive button -->
-    <button onclick="addFunClass()">Click me for Fun!</button>
+    <button onclick="changeBackgroundColor()">Click me for Fun!</button>
 
     <!-- Coworker notes section -->
     <div class="coworker-notes">
@@ -99,37 +99,28 @@
             <p>Charlie! My oldest work friend! We've seen some stuff, huh? Your talent for turning challenges into adventures have made my workdays (almost) enjoyable. Could not have asked for a better person to work with. We'll miss not seeing your face on calls, ha. Crush Campus! </p>
         </div>
 
-        <div class="coworker-note">
-            <h2 style="color: #4682b4;">Brian</h2> <!-- Steel Blue heading color -->
-            <p>Write your farewell note here...</p>
-        </div>
+        <!-- Additional coworker notes go here... -->
 
-        <div class="coworker-note">
-            <h2 style="color: #20b2aa;">Briana</h2> <!-- Light Sea Green heading color -->
-            <p>Write your farewell note here...</p>
-        </div>
-
-        <div class="coworker-note">
-            <h2 style="color: #ff6347;">Nell</h2> <!-- Tomato heading color -->
-            <p>Write your farewell note here...</p>
-        </div>
-
-        <div class="coworker-note">
-            <h2 style="color: #ff6347;">Stephan</h2> <!-- Tomato heading color -->
-            <p>Write your farewell note here...</p>
-        </div>
     </div>
 
     <img src="https://media.giphy.com/media/3ohuPBenpDq310Xynu/giphy.gif" alt="Celebration Image" class="celebration-img">
     <p>From, your RILO pals </p>
 
     <script>
-        // JavaScript function to add 'fun' class to the button
-        function addFunClass() {
-            var button = document.querySelector('button');
-            button.classList.add('fun');
-            // Additional fun action (you can customize this part)
-            alert("Confetti time!");
+        // JavaScript function to change background color on button click
+        function changeBackgroundColor() {
+            var body = document.querySelector('body');
+            body.style.backgroundColor = getRandomColor();
+        }
+
+        // Function to generate a random color
+        function getRandomColor() {
+            var letters = '0123456789ABCDEF';
+            var color = '#';
+            for (var i = 0; i < 6; i++) {
+                color += letters[Math.floor(Math.random() * 16)];
+            }
+            return color;
         }
     </script>
 </body>
